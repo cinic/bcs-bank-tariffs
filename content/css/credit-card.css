@@ -1,0 +1,42 @@
+﻿#advantages .item {
+	width: auto;
+}
+
+#advantages .col-sm-3 {
+	padding: 0;
+}
+
+#advantages .col-sm-6 {
+	padding: 0;
+}
+
+#advantages .col-sm-6 img {
+	margin: 0 auto;
+}
+
+#advantages .button {
+	margin: 0;
+}
+
+.bcs_bank .note-block p {
+	text-align: center;
+	font-size: 10px;
+	margin-bottom: 0;
+}
+
+.bcs_bank .img-center {text-align: center; margin-bottom: 15px; margin-top: 30px; }
+.bcs_bank .col {margin-bottom: 30px;}
+.bcs_bank .description { text-align: center; font-size: 13px; line-height: 16px; color: #7b7b7b;}
+.bcs_bank .button { text-align: center; margin-bottom: 20px; margin-top: 30px;}
+
+@media (min-width: 992px) {
+
+	#advantages .col-sm-3 {
+		width: 150px;
+	}
+
+	#advantages .col-sm-6 {
+		width: 550px;
+	}
+
+}

@@ -1,0 +1,16 @@
+/**
+ * шаг 4
+ */
+
+.block-btn-valuta .btn {
+	display: block;
+	margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+	.block-btn-valuta .btn {
+		display: inline-block;
+		margin-bottom: 0;
+		width: 220px;
+	}
+}

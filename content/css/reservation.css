@@ -1,0 +1,401 @@
+/* Фиксы для шапки и подвала */
+
+body {
+	cursor: default;
+}
+.screen-full {
+	height: 100px !important;
+}
+.galery_wrapp {
+	padding-top: 60px;
+}
+.first_slide_wrapper_inner {
+	min-height: 60px;
+}
+.container {
+	width: 700px;
+	padding: 0 !important;
+}
+.footer .container {
+	padding: 0 !important;
+}
+.footer .row {
+	width: 700px;
+}
+.footer .col-sm-9,
+.footer .col-sm-3 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Общие стили */
+
+.with-error {
+	border: 1px solid #c00 !important;
+}
+/* Сообщение об ошибке */
+#error-message {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: auto;
+	height: auto;
+	color: #fff;
+	background: #cc0000;
+	z-index: 9999;
+	padding: 10px;
+	border-radius: 5px;
+	display: none;
+	cursor: pointer;
+}
+#error-message:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(204, 0, 0, 0);
+	border-bottom-color: #cc0000;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+/* Каптчи */
+
+#captcha-top,
+#captcha-bottom {
+	width: 200px;
+	margin-left: 10px;
+}
+#captcha-top-reload,
+#captcha-bottom-reload {
+	outline: none;
+}
+
+/* Общее обрамление всего контента страницы */
+
+.steps-wrapper {
+	width: 700px;
+	margin: 0 auto 20px;
+	border: 1px solid #ccc;
+}
+.steps-wrapper > h3 {
+	margin: 0;
+	border-bottom: 1px solid #ccc;
+	padding: 20px;
+}
+
+/* Блок загрузки сохраненной заявки */
+
+.step-load {
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.step-load p {
+	color: #34495e;
+	font-weight: normal;
+}
+.step-load .w250 {
+	width: 250px !important;
+}
+.step-load .form-submit {
+	width: 150px !important;
+	float: right;
+	text-align: right;
+}
+.step-load .form-submit > input {
+	height: 50px;
+}
+#number,
+#inn {
+	width: 200px;
+}
+
+.btn-plain {
+	color: #002863;
+	background: transparent;
+	border: 2px solid #002863;
+	border-radius: 24px;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 13px 60px;
+}
+h2 {
+	color: #012863;
+	font-weight: 600;
+	font-size: 24px;
+	margin: 0 0 20px;
+	text-transform: uppercase;
+}
+.step-loading,
+.step4 {
+	display: none;
+	position: relative;
+}
+
+.step-load .form-group,
+ label,
+ .form-group input[type=text] {
+	width: 100%;
+}
+ label {
+	color: #5c5c5c;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.step-load .group_continue {
+	text-align: center;
+}
+.form-group input[type=text] {
+	color: #adadad;
+	height: 40px;
+	border: 1px solid #dbdbe1;
+	padding: 0 10px;
+}
+.form-group input.btn-continue {
+	color: #283d66;
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.org-type {
+	background-color: #e2e2e2;
+	border-bottom: 1px solid #ccc;
+	padding: 20px !important;
+	overflow: hidden;
+}
+#number-new {
+	background-color: #f3c632;
+	color: #000;
+	font-size: 21px;
+}
+.step-data {
+	padding: 20px;
+}
+.org-type .form-group.number {
+	margin-top: 20px;
+}
+.form-group select {
+	height: 40px;
+	background: #e4e6ea;
+	color: #808182;
+	width: 100%;
+	border: 1px solid #dbdbe1;
+	padding: 5px;
+}
+.org-type .form-group.number input {
+	width: 100%;
+	height: 40px;
+	border: none;
+	font-weight: bold;
+	text-align: center;
+	color: #5c5c5c;
+}
+.org-type .disclaimer {
+	margin-top: 20px;
+	color: #878787;
+}
+.form-group-agreement .checkbox,
+.form-group-agreement .form-group-next {
+	width: 100%;
+	text-align: center;
+}
+.form-group-agreement .checkbox label {
+	text-align: left;
+	margin: 0 auto;
+	width: auto;
+}
+.group-full {
+	width: 100%;
+	padding: 0;
+}
+.step-data .form-group-agreement,
+.step-data .form-group-agreement .btn-continue {
+	margin-top: 20px;
+}
+
+.wait {
+	text-align: center;
+	min-height: 200px;
+	font-size: 24px;
+}
+.wait .title {
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -100px;
+	width: 100%;
+	text-align: center;
+}
+
+.step4 .number_title {
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.step4 .number {
+	font-size: 20px;
+	font-weight: bold;
+}
+.step4 .credentials {
+	text-transform: uppercase;
+}
+.form-group-agreement label {
+	text-transform: none;
+}
+.contact-form__steps .step {
+	width: 33%;
+}
+hr {
+	border-color: #ccc;
+}
+div.line {
+	border-bottom: 1px solid #ccc;
+	margin: 20px 0;
+}
+.wait .seconds {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -12px;
+	margin-top: -17px;
+	color: #adadad;
+}
+#get-account {
+	margin: 20px 0 0 -80px;
+	outline: none;
+	border: 2px solid #f3c632;
+}
+
+
+/* Блок успеха */
+
+.step-success {
+	display: none;
+	padding: 20px;
+}
+.step-success a {
+	text-decoration: underline;
+}
+.step-success .success-lined {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+.step-success .success-number {
+	color: #595959;
+	font-weight: bold;
+	font-size: 16px;
+}
+.step-success .success-requisits {
+	color: #595959;
+}
+.step-success .success-links {
+	overflow: hidden;
+}
+.step-success .success-links a {
+	float: left;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	outline: none;
+}
+
+.step-success div.success-links a {
+	float: none;
+	display: block;
+	margin-right: 0px;
+	margin-bottom: 20px;
+}
+
+.step-success p.success-links a {
+	float: left;
+	margin-right: 40px;
+}
+
+#reservation-terms ol > li {
+	list-style-type: decimal;
+}
+
+#reservation-terms ol ul {
+	padding-left: 20px;
+}
+
+#reservation-terms ol ul li {
+	list-style-type: disc;
+}
+
+.termins td
+{
+	padding: 5px;
+	border: 1px solid #ccc;
+	font-style: italic;
+}
+
+.termins td + td {font-style: normal;}
+
+.termins li { list-style-type: disc; margin-left: 20px;}
+
+@media (min-width: 420px) {
+	.step-load .form-group {
+		display: inline-block;
+		box-sizing: border-box;
+	}
+	/*
+	.step-load .group_number,
+	.step-load .group_inn {
+		width: 35%;
+		padding-right: 10px;
+	}
+	*/
+	.step-load .group_continue {
+		width: 30%;
+	}
+	.wait {
+		min-height: 420px;
+	}
+	.wait .title {
+		margin-top: -70px;
+	}
+}
+@media (min-width: 640px) {
+	.org-type .form-group.number {
+		margin-top: 0;
+	}
+	 .groups .form-group {
+		float: left;
+	}
+	.org-type .form-group.org_type {
+		width: 70%;
+		padding-right: 20px;
+	}
+	.org-type .form-group.number {
+		width: 30%;
+	}
+	 .group-full {
+		padding: 0 10px 0 5px;
+	}
+	.group-33 {
+		width: 33%;
+		padding: 0 5px;
+	}
+	.form-group-agreement .checkbox {
+		float: left;
+		width: 70%;
+	}
+	.form-group-agreement .checkbox label {
+		width: 100%;
+	}
+	.form-group-agreement .form-group-next {
+		float: left;
+		width: 30%;
+	}
+	.step-data .form-group-agreement .checkbox {
+		vertical-align: top;
+	}
+	.wait {
+		min-height: 642px;
+	}
+}

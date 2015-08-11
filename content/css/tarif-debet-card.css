@@ -1,0 +1,163 @@
+.tarifs_debet_carts .row {
+	margin-bottom: 30px;
+}
+
+.tarifs_debet_carts .row .item {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.tarifs_debet_carts .item img {
+	max-width: 100%;
+}
+
+.tarifs_debet_carts h1 {
+	text-align: center;
+	color: #002863;
+	font-weight: 600;
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+
+.tarif_debet_desc_table {
+	padding: 0 65px;
+	display: none;
+}
+
+.tarif_debet_desc_mobile {
+	display: block;
+	padding: 0 10px;
+}
+
+.tarif_debet_desc_mobile ul {
+	max-width: 320px;
+	margin: 0 auto;
+}
+
+.tarif_debet_desc_mobile ul li {
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 20px;
+	padding-bottom: 9px;
+}
+
+.tarif_debet_desc_mobile ul li.no_border {
+	border-bottom: none;
+}
+
+.tarif_debet_desc_mobile ul li p{
+	color: #404040;
+	font-size: 17px;
+	letter-spacing: 1.1px;
+	font-weight: normal;
+	line-height: 19px;
+}
+
+.tarif_debet_desc_mobile ul li p.title_tarif{
+	color: #767676; 
+	font-weight: 600;
+}
+
+.tarif_debet_desc_mobile ul li p.blue{
+	color: #808fa2;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.tarif_debet_desc_table table {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.tarif_debet_desc_table table tr td {
+	border-bottom: 1px solid #e5e5e5;
+	color: #404040;
+	font-size: 17px;
+	letter-spacing: 1.1px;
+	font-weight: normal;
+	min-height: 82px;
+	line-height: 19px;
+	padding: 20px 0;
+	padding-left: 25px;
+}
+
+.tarif_debet_desc_table table tr td.no_border {
+	border-bottom: none;
+}
+
+.tarif_debet_desc_table table tr td span {
+	color: #808fa2;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.tarif_debet_desc_table table tr td.title_tarif {
+	color: #767676; 
+	font-weight: 600;
+	width: 40%;
+}
+
+
+.pdf_opis_debet_tarif h2 {
+	text-align: center;
+	color: #002863;
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+
+.tarifs-descr {
+	border-top: 1px solid #e5e5e5;
+	padding-top: 20px;
+	text-align: left;
+	margin-bottom: 70px;
+}
+
+.tarifs-descr a {
+	color: #002863;
+	display: block;
+	width: 100%;
+	padding: 17px 0;
+	padding-left: 80px;
+	background-position: 0 0;
+	margin-bottom: 20px;
+}
+
+.tarifs-descr .file-icon-pdf.two-line {
+	padding: 7px 0;
+	padding-left: 80px;
+}
+
+.file-icon-pdf {
+	background: url(../img/icons/files-pdf.png) no-repeat;
+}
+
+@media (min-width: 768px) {
+
+	.first_slide {
+		padding-top: 215px;
+	}
+	
+	.tarif_debet_desc_mobile {
+		display: none;
+	}
+	
+	.tarif_debet_desc_table {
+		display: block;
+		margin-top: 70px;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	.pdf_opis_debet_tarif .container {
+		padding: 0 170px !important;
+	}
+
+}
+
+.note-block p {
+	text-align: left;
+	font-size: 10px;
+	margin-bottom: 10px;
+	color: #7b7b7b;
+}

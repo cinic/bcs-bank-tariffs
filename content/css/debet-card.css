@@ -1,0 +1,50 @@
+﻿.first_slide_wrapper {
+	height: 143px !important;
+}
+.slide_first {
+	height: 100%;
+	box-sizing: border-box;
+	padding-top: 182px;
+	overflow: hidden;
+	position: relative;
+}
+
+.invisible { display: none;}
+.bcs_card_selector { padding: 40px 0px; background: #48648c;}
+.bcs_card_selector .img-center { text-align: center; margin-bottom: 15px; margin-top: 20px; }
+.bcs_card_selector .img-center img { display: inline-block;}
+.bcs_card_selector .col + .col { border-left: 1px solid #5b7399; }
+
+.button .blue.btn-info{ font-size: 13px; color: #8190A3; background: transparent; padding: 2px 25px; border: none;}
+
+
+.button .blue.btn-info:hover,
+.button .blue.btn-info:focus,
+.button .blue.btn-info:active,
+.button .blue.btn-info.active { background:#002863; /*border: 2px solid #002863;*/ color: #fff;}
+
+.bcs_card_selector .button { text-align: center; margin-bottom: 0px;}
+
+.button .orange.btn-info{ font-size: 12px; border: 2px solid #f1b900; padding: 6px 45px;}
+
+.button .orange.btn-info:hover,
+.button .orange.btn-info:focus,
+.button .orange.btn-info:active,
+.button .orange.btn-info.active { background:#f1b900; /*border: 2px solid #002863;*/ color: #fff;}
+
+.bcs_service_condition { padding: 30px 0 55px 0; background: #f2f3f7;}
+/*.bcs_service_condition .container { padding: 0px 0px; }*/
+.bcs_service_condition .container > h2 {text-align: center; color: #012863; font-weight: 600; text-transform: uppercase; font-size: 26px; margin-bottom: 40px;}
+.bcs_service_condition .item {padding: 10px 10px 50px 10px;}
+.bcs_service_condition .left { text-transform: uppercase;}
+.bcs_service_condition .left,
+.bcs_service_condition .right { position: relative; padding: 0px; }
+.bcs_service_condition .left .item { background: #f0d063; max-width: 256px; float: right; clear: both; font-size: 11px;}
+.bcs_service_condition .right .item { background: #e5e6ea; max-width: 238px; float: left; clear: both; margin-left: 8px; font-size: 14px;}
+.bcs_service_condition .item ul > li { display: table; height: 55px; width: 100%;}
+.bcs_service_condition .item ul > li span { display: table-cell; width: 100%; height: 100%; vertical-align: middle; color: #8f7e48; padding: 0 15px 0 15px;}
+.bcs_service_condition .right .item ul > li span { color: #848d9b; }
+.bcs_service_condition .left ul > li + li span { border-top: 1px solid #f5de92;}
+.bcs_service_condition .right ul > li + li span { border-top: 1px solid #d8d9db;}
+.bcs_service_condition .item ul > li:first-child { height: 65px; }
+.bcs_service_condition .item ul > li:last-child { height: 75px; }

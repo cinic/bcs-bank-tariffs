@@ -1,0 +1,85 @@
+﻿/**
+ * финальный экран
+ */
+
+.screen-final {
+	padding: 40px 0;
+}
+
+.screen-final .valuta-header-small {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.screen-final .valuta-header-smaller {
+	text-align: center;
+}
+
+.screen-final .order-params {
+	margin: 20px auto;
+}
+
+.screen-final .map {
+	margin: 20px auto;
+	width: auto;
+	height: 240px;
+	border: 1px solid #ccc;
+}
+
+.screen-final .filial-info {
+	text-align: center;
+}
+
+.screen-final .block-btn-valuta {
+	margin-top: 50px;
+}
+
+@media (min-width: 480px) {
+	.screen-final .order-params {
+		width: 280px;
+	}
+
+	.screen-final .map {
+		width: 240px;
+		height: 240px;
+	}
+}
+
+@media (min-width: 768px) {
+	.screen-final .valuta-header-smaller {
+		text-align: left;
+	}
+
+	.screen-final .order-params {
+		width: auto;
+		margin: 0;
+	}
+
+	.screen-final .map {
+		margin: 0;
+		margin-right: 20px;
+		float: left;
+	}
+
+	.screen-final .filial-info {
+		text-align: left;
+	}
+}
+
+
+/**
+ * карта
+ */
+
+.marker {
+	display: block;
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	background: #0d2e67;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+}

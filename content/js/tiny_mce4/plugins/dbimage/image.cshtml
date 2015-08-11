@@ -1,0 +1,19 @@
+@using System.Configuration;
+@{
+	string sid = Request.QueryString["id"];
+	int id = !string.IsNullOrWhiteSpace(sid) ? int.Parse(sid) : 0;
+
+	if(id > 0)
+	{
+		var stor = new BCSM.Data.FileStorage.DB.Photo.Storage(
+			ConfigurationManager.ConnectionStrings["ImageStorage"].ConnectionString,
+			ConfigurationManager.AppSettings["Article.ImageStorage.Table"]);
+
+		Response.ClearHeaders();
+		Response.ClearContent();
+
+		var img = stor.Get(id);
+		Response.ContentType = img.MIMEType;
+		Response.BinaryWrite(img.Content);
+	}
+}

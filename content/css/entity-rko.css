@@ -1,0 +1,149 @@
+﻿.first_slide_wrapper {
+	height: 143px !important;
+}
+
+.invisible {
+	display: none;
+}
+
+.rko_tarif_selector {
+	padding: 40px 0px;
+	background: #48648c;
+	overflow: hidden;
+}
+
+.rko_tarif_selector .container {
+	position: relative;
+}
+
+.rko_tarif_selector .item {
+	cursor: pointer;
+	padding: 0 20px;
+}
+
+.rko_tarif_selector .container > h2 {
+	color: #fff;
+	text-align: center;
+	font-weight: 300;
+	margin: 5px 0px 60px 0px;
+	font-size: 28px;
+	line-height: 1;
+}
+
+.rko_tarif_selector .item p {
+	padding: 20px 0px 0px;
+	color: #fff;
+	text-align: center;
+	visibility: hidden;
+}
+
+.rko_tarif_selector .item p.active {
+	visibility: visible;
+}
+
+.rko_tarif_selector .item .btn.btn-border_white:hover + p {
+	visibility: visible;
+}
+
+.rko_tarif_selector .col + .col {
+	border-left: 1px solid #5b7399;
+}
+
+.button .blue.btn-info {
+	font-size: 13px;
+	color: #8190A3;
+	background: transparent;
+	padding: 2px 25px;
+	border: none;
+}
+
+.btn.btn-border_white {
+	border: 1px solid #fff;
+	padding: 13px 12px;
+	font-size: 25px;
+	line-height: 1;
+	border-radius: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	width: 100%;
+	font-weight: 300;
+}
+
+.btn.btn-border_white:hover, .btn.btn-border_white.active {
+	background: #11366c;
+}
+
+.button .blue.btn-info:hover, .button .blue.btn-info:focus, .button .blue.btn-info:active, .button .blue.btn-info.active {
+	background:#002863;
+	color: #fff;
+}
+
+.rko_tarif_selector .button {
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.button .orange.btn-info {
+	font-size: 12px;
+	border: 2px solid #f1b900;
+	padding: 6px 45px;
+}
+
+.button .orange.btn-info:hover, .button .orange.btn-info:focus, .button .orange.btn-info:active, .button .orange.btn-info.active {
+	background:#f1b900;
+	color: #fff;
+}
+	
+.arrows {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: 0;
+}
+
+.arrows .center {
+	position: relative;
+}
+
+.arr-left, .arr-right {
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 63px;
+	background: url(/content/img/slider-arrows.png) 0 0 no-repeat;
+	top: -15px;
+	z-index: 5;
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+
+.arr-right {
+	background-position: -31px 0;
+	right: 0;
+}
+
+.arr-left {
+	left: 0;
+}
+
+.arr-left:hover {
+	left: -3px;
+}
+
+.arr-right:hover {
+	right: -3px;
+}
+
+
+
+@media (max-width: 768px)
+{
+
+	.bcs_card_services .r2.col {
+		clear: none !important;
+	}
+
+}

@@ -1,0 +1,24 @@
+﻿.transparent-selector {
+    display: inline-block;
+    position: relative;
+}
+
+.transparent-selector__value {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    display: block;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.transparent-selector select {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}

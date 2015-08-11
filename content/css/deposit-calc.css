@@ -1,0 +1,287 @@
+﻿.first_slide_wrapper {
+	height: auto !important;
+}
+
+.deposit_calc_wrapper {
+	padding-top: 140px;
+	padding-bottom: 40px;
+}
+
+.deposit_calc_wrapper h2 {
+	color: #002863;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 40px 0;
+}
+
+.deposit_calc_wrapper h2 small {
+	display: block;
+	color: #969696;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+
+.deposit-insurance {
+	background: #f1f3f6;
+	border-bottom: 1px solid #cdd5e0;
+	color: #1f1f1f;
+	text-align: center;
+}
+
+.deposit-insurance__wrapper {
+	padding: 20px;
+}
+
+.deposit-insurance img {
+	margin-bottom: 20px;
+}
+
+.deposit-insurance p {
+	font-weight: 300;
+}
+
+
+.deposit-pros {
+	background: url(../img/bcs_bank_main_102.jpg) no-repeat 50% top;
+	background-size: cover;
+	color: #fff;
+	padding: 80px 0;
+	min-height:477px;
+}
+
+.deposit-pros h2 {
+	font-size: 32px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.deposit-pros h2 small {
+	display: block;
+	color: #f0c53a;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.deposit-pros .title-detail {
+	color: #dedede;
+	font-size: 16px;
+	font-weight: 300;
+	text-align: center;
+}
+
+
+.deposit-pros__items {
+	margin: 40px auto;
+}
+
+.deposit-pros__items .item {
+	font-size: 16px;
+	font-weight: 300;
+	text-align: center;
+	margin: 20px auto;
+	max-width: 240px;
+}
+
+.deposit-pros__items .item img {
+	margin-bottom: 10px;
+}
+
+
+.deposit-details {
+	background: #f1f3f6;
+	padding: 20px 0;
+}
+
+.deposit-details h2 {
+	color: #002863;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.deposit-details .gtabs {
+	text-align: center;
+	width: 320px;
+	margin: 40px auto;
+	position: relative;
+	height: 32px;
+	border: 1px solid #848d9b;
+	border-radius: 16px;
+}
+
+.deposit-details .gtabs a {
+	float: left;
+	width: 50%;
+	height: 30px;
+	line-height: 30px;
+	color: #848d9b;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+.deposit-details .gtabs a.current,
+.deposit-details .gtabs a:hover {
+  color: #fff;
+  background: #848d9b;
+  border-radius: 0px 16px 16px 0px;
+  text-decoration: none;
+}
+
+.deposit-details .gtabs a.first.current,
+.deposit-details .gtabs a.first:hover {
+  border-radius: 16px 0px 0px 16px;
+}
+
+
+.deposit-details__sum-selector {
+	margin: 40px 0;
+}
+
+.deposit-details__sum-selector h3 {
+	color: #7c7d7e;
+	font-size: 10px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.deposit-details__sum-selector ul {
+	font-size: 12px;
+	text-align: center;
+}
+
+.deposit-details__sum-selector ul li {
+	display: inline;
+}
+
+.deposit-details__sum-selector ul li a {
+	display: inline-block;
+	color: #141414;
+	text-decoration: none;
+	border-radius: 19px;
+	padding: 10px 30px;
+}
+
+.deposit-details__sum-selector ul li a.active {
+	background: #f0d062;
+}
+
+
+.deposit-details__table {
+	margin: 0 -15px;
+}
+
+.deposit-details__table table {
+	width: 100%;
+}
+
+.deposit-details__table table tr th {
+	color: #7c7d7e;
+	font-size: 10px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 15px 0;
+	width: 50%;
+}
+
+.deposit-details__table table tr td {
+	color: #002863;
+	text-align: center;
+	padding: 15px 0;
+}
+
+.deposit-details__table table tr th:after,
+.deposit-details__table table tr td:after {
+	content: '';
+	background: #dedfe1;
+	display: block;
+	height: 1px;
+	position: relative;
+	top: 15px;
+	margin: 0 10px;
+}
+
+.deposit-details__table table tr > th:first-child + th,
+.deposit-details__table table tr > td:first-child + td {
+	background: #f0d062;
+}
+
+.deposit-details__table table tr > th:first-child + th:after,
+.deposit-details__table table tr > td:first-child + td:after {
+	background: #f0e0a9;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.deposit-insurance__wrapper {
+		width: 720px;
+		margin: 0 auto;
+	}
+
+	.deposit-insurance img {
+		float: left;
+		margin-bottom: 0;
+	}
+
+	.deposit-insurance p {
+		margin-top: 10px;
+		margin-left: 90px;
+		text-align: left;
+	}
+
+	.deposit-pros__items .item {
+		box-sizing: border-box;
+		float: left;
+		width: 25%;
+		max-width: 100%;
+		padding: 0 10px;
+	}
+	
+	.deposit-details .gtab-content_wrapp {
+		/*max-width: 660px;*/
+		margin: 40px auto;
+	}
+	
+	.deposit-details__sum-selector {
+		float: left;
+		width: 40%;
+		margin: 0;
+	}
+
+	.deposit-details__sum-selector ul li {
+		display: block;
+		margin-top: 15px;
+	}
+
+	.deposit-details__table {
+		float: left;
+		width: 60%;
+		margin: 0;
+	}
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 1200px) {
+	.deposit-pros__items {
+		margin: 60px auto;
+	}
+	
+	.deposit-pros__items .item {
+		padding: 0 20px;
+	}
+	
+	.deposit-pros__items .item img {
+		margin-bottom: 20px;
+	}
+}

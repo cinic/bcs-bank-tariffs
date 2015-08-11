@@ -1,0 +1,267 @@
+﻿/*
+.contact-form h2 small {
+    display: block;
+    color: #232323;
+    font-size: 14px;
+    text-transform: none;
+    margin-top: 5px;
+}
+
+.contact-form__steps {
+	max-width: 240px;
+	margin: -20px auto 40px auto;
+}
+
+.contact-form__steps .step {
+	box-sizing: border-box;
+	color: #393939;
+	font-size: 12px;
+	font-weight: 300;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.contact-form__steps .step .hr {
+	position: relative;
+	height: 1px;
+	margin: 40px 0 20px 0;
+}
+
+.contact-form__steps .step .hr:before {
+	content: '';
+	display: block;
+	width: 18px; height: 18px;
+	position: absolute; left: 50%; top: -9px;
+	margin-left: -9px;
+	border: 2px solid #f1b900;
+	border-radius: 9px;
+}
+*/
+.contact-form__feedback form { margin-top: 20px; }
+#aco { display: none; }
+#aco .contact-form__steps .step { width: 33%; }
+#aco .contact-form__steps .step, #aco .contact-form__steps .step:hover, #aco .contact-form__steps .step:active, #aco .contact-form__steps .step:visited { text-decoration: none; outline: none; }
+#aco .contact-form__steps .step.active { font-weight: bold; outline: none; }
+
+
+.contact-form__aco {
+	background: #f1f3f6;
+	border-top: 1px solid #d9dfe8;
+	border-bottom: 1px solid #d9dfe8;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.contact-form__aco:before {
+	content: '';
+	background: #f1c531;
+	display: block;
+	height: 6px;
+}
+
+.contact-form__aco h3 {
+	color: #8f9092;
+	font-size: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 30px 0;
+}
+
+.contact-form__aco .form-group {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.contact-form__aco .form-group {
+	margin-top: 10px;
+	min-height: 50px;
+	clear: both;
+}
+
+.contact-form__aco .form-group-btn {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.contact-form__aco .form-group .label {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+}
+
+.contact-form__aco .form-group .label.height-normal { line-height: 25px; }
+.contact-form__aco .form-group .label.height-auto { height: auto; }
+
+.contact-form__aco .form-group .label.label-full { width: 100%; }
+
+.contact-form__aco .form-group .input {
+	float: left;
+	width: 310px;
+	height: 50px;
+	line-height: 50px;
+}
+.contact-form__aco .form-group .input label {
+	margin-right: 30px;
+}
+
+.contact-form__aco .form-group.form-group-max .label {
+	width: 400px;
+}
+
+.contact-form__aco .form-group.form-group-max .input {
+	width: 110px;
+}
+
+.contact-form__aco .form-control {
+	border: 1px solid #d9dfe8;
+	border-radius: 0;
+	font-size: 14px;
+	height: 50px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	width: 100%;
+}
+
+.contact-form__aco .form-control:focus {
+	border-color: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.form-control.center {
+	display: inline-block;
+	text-align: center;
+}
+.form-control.w100 {
+	width: 100px;
+}
+.form-control.w150 {
+	width: 150px;
+}
+
+.contact-form__aco .btn-plain {
+	color: #002863;
+	background: transparent;
+	border: 2px solid #002863;
+	border-radius: 24px;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 13px 60px;
+}
+
+.contact-form__aco .btn-plain:hover {
+	color: #fff;
+	background: #002863;
+}
+
+.contact-form__aco .form-control-inline { display: inline-block; }
+.contact-form__aco .radio, .contact-form__aco .checkbox { margin-top: 0; }
+
+.aco_step { display: none; }
+#acoForm_step1 { display: block; }
+#btn_prev { display: none; }
+.previous_surname_info, .sphere_of_activity_other, .post_other { display: none; }
+
+.contact-form__aco .form-group.loan_product { height: 140px; }
+.contact-form__aco .form-group.loan_product .input { line-height: normal; width: 400px; }
+.contact-form__aco .form-group.life_insurance .input,
+.contact-form__aco .form-group.insurance_payment .input { width: 160px; }
+.contact-form__aco .radio-inline { padding-left: 0;}
+.contact-form__aco .form-group .input .radio-inline label { margin-right: 0;}
+
+.contact-form__aco .form-group.employment_type { height: 140px; }
+.contact-form__aco .form-group.employment_type .input { line-height: normal; }
+.contact-form__aco .form-group.car-data { display: none; }
+.contact-form__aco .form-group.car_manufacturer .radio { display: inline-block; }
+
+.contact-form__aco .form-group.existing_credit_agreements .label { width: 360px; }
+.contact-form__aco .form-group.existing_credit_agreements-data { display: none; }
+.contact-form__aco .form-group.banks .input .form-control { width: 524px; }
+.contact-form__aco .form-group.total_liabilities_for_all_active_loans .label,
+.contact-form__aco .form-group.total_monthly_payments_on_all_loans .label { width: 423px; }
+.contact-form__aco .form-group.total_liabilities_for_all_active_loans .input,
+.contact-form__aco .form-group.total_monthly_payments_on_all_loans .input { width: 100px; }
+
+.contact-form__aco .form-group.additional_questions-data { display: none; }
+.contact-form__aco .form-group.additional_questions-data .label { width: 448px; }
+.contact-form__aco .form-group.additional_questions-data .input { width: 80px; }
+.contact-form__aco .form-group.additional_questions-data.court_decision { min-height: 75px; }
+.contact-form__aco .form-group.additional_questions-data.court_decision .label { height: 75px; }
+.contact-form__aco .form-group.additional_questions-data.info .label.label-full { width: 100%; }
+.contact-form__aco .form-group.additional_questions-data.info.input  { min-height: 100px; }
+.contact-form__aco .form-group.additional_questions-data.info .input .form-control { width: 524px; height: 100px; }
+
+.contact-form__aco .form-group.work_experience_current .form-control { width: 150px; }
+
+.flat-data, .countryhouse-data, .parcel-data, .garage-data { display: none; }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+/*	.contact-form__steps {
+		max-width: 100%;
+		margin-top: 40px;
+	}
+	
+	.contact-form__steps .step {
+		float: left;
+		width: 25%;
+		text-align: left;
+	}
+	
+	.contact-form__steps .step .hr {
+		background: #e5e5e5;
+		margin: 10px 0 30px 30px;
+	}
+	
+	.contact-form__steps .step .hr:before {
+		position: absolute; left: -32px; top: -9px;
+		margin-left: 0;
+	}
+	*/
+	.contact-form__aco {
+		border-left: 1px solid #d9dfe8;
+		border-right: 1px solid #d9dfe8;
+		/*max-width: 518px;*/
+		margin: 0 auto;
+	}
+	
+	.contact-form__aco .form-group {
+		margin-left: 70px;
+		margin-right: 70px;
+	}
+}
+
+
+#acoForm_checksms_popup { text-align: center; }
+#acoForm_checksms_popup .form-control { width: 100px; margin: 0 auto; }
+#acoForm_checksms_popup_send, #acoForm_checksms_popup_send_message { margin-top: 20px; }
+#acoForm_checksms_popup_send_message { margin-bottom: 24px; }
+#acoForm_checksms_popup_send { display: none; }
+
+.field-validation-valid { display: none; }
+.has-error .field-validation-error { display: inline-block; border: 1px solid #c00; padding: 3px 10px; }
+
+.contact-form_form-title { text-align: center; margin-bottom: 20px; }
+.step-header { text-transform: none; }
+.step-header > span { margin-left: 30px; text-transform: none; }
+
+.form-group-star { color: #8f9092; }
+.star { color: #cc0000; }
+
+.twitter-typeahead { width: 100% !important; }
+.twitter-typeahead-auto .twitter-typeahead { width: auto !important; }
+.contact-form__aco .tt-menu {
+	line-height: normal;
+	background: #fff;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+.tt-suggestion { padding: 3px 0; cursor: pointer; }
+.tt-highlight { color: #777; }
+.tt-cursor { background: #f1c531; }
+.form-group-err { display: none; }

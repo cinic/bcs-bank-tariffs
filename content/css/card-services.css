@@ -1,0 +1,24 @@
+﻿	.bcs_card_services { padding: 35px 0px;}
+	
+	.bcs_card_services .container > h2 {text-align: center; color: #012863; font-weight: 600; text-transform: uppercase; font-size: 26px; margin-bottom: 20px;}
+	.bcs_card_services .img-center {text-align: center; margin-bottom: 15px; margin-top: 30px; }
+	.bcs_card_services .col {margin-bottom: 30px; height: 150px;}
+	.bcs_card_services .r2.col {border-top: 1px solid #ecedf1;}
+	.bcs_card_services .description { text-align: center; font-size: 13px; line-height: 16px; color: #7b7b7b;}
+	.bcs_card_services .button { text-align: center; margin-bottom: 20px; margin-top: 30px;}
+
+.note-block p {
+	text-align: center;
+	font-size: 10px;
+	margin-bottom: 0;
+	color: #7b7b7b;
+}
+
+	@media (min-width: 1200px) {
+	  .bcs_card_services .container { padding: 0px 170px; }
+	}
+	
+	@media (max-width: 768px) 
+	{
+		.bcs_card_services .r2.col {border-top: none;}
+	}

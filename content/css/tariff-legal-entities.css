@@ -1,0 +1,64 @@
+#main-menu {
+  border-bottom: 0;
+}
+.first_slide_wrapper {
+  height: 143px !important;
+}
+
+.tariffs_legal_entities h1 {
+  margin-top: 44px;
+  margin-bottom: 44px;
+  color: #232323;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+}
+
+.tariff_legal_entities_desc_table table {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.tariff_legal_entities_desc_table .no-bull {
+  margin: 0;
+  line-height: 24px;
+  list-style: none;
+}
+
+.tariff_legal_entities_desc_table table tr td {
+  padding: 18px 0 18px 25px;
+  line-height: 19px;
+  border-bottom: 1px solid #e5e5e5;
+  color: #767676;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.tariff_legal_entities_desc_table table tr td.no_border {
+  border-bottom: none;
+}
+
+.tariff_legal_entities_desc_table table tr td span {
+  color: #808fa2;
+  font-size: 14px;
+}
+
+.tariff_legal_entities_desc_table table tr td.title_tarif {
+  padding-right: 40px;
+  width: 22.5%;
+  color: #767676;
+}
+    
+@media (min-width: 768px) {
+
+  .tariff_legal_entities_desc_table {
+    display: block;
+  }
+
+}
+
+.note-block p {
+  text-align: left;
+  font-size: 10px;
+  margin-bottom: 10px;
+  color: #7b7b7b;
+}

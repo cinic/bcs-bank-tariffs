@@ -1,0 +1,265 @@
+﻿/**
+ * текущие курсы
+ */
+
+.valuta-details {
+	background: #f1f3f6;
+	padding: 40px 0;
+}
+
+.table-valuta {
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.table-valuta-590 {
+	width: 590px;
+	margin: 0 auto;
+}
+
+.table-valuta td {
+	background-color: #e4e6ea;
+	color: #002863;
+	font-size: 14px;
+	padding: 0 10px;
+	vertical-align: top;
+}
+
+.table-valuta td:first-child {
+	background-color: #f0d062;
+	border-right: 10px solid #f1f3f6;
+	color: #7c6f43;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.table-valuta td .tcell {
+	border-top: 1px solid #d9dce2;
+	padding: 15px 10px;
+}
+
+.table-valuta td:first-child .tcell {
+	border-top: 1px solid #f5de91;
+}
+
+.table-valuta td .tcell--header {
+	border-top: none;
+	font-size: 9px;
+	text-transform: uppercase;
+}
+
+.table-valuta td .tcell--noborder {
+	border-top: none !important;
+}
+
+.table-valuta td .note {
+	display: block;
+	font-size: 9px;
+	text-transform: none;
+}
+
+
+/**
+ * курсы валют
+ */
+
+.valuta-course-wrapper {
+	text-align: center;
+}
+
+.valuta-course {
+	display: inline-block;
+	margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.valuta-course__title {
+	color: #002863;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+}
+
+.valuta-course__label {
+	padding-left: 0 !important;
+}
+
+.valuta-course__text {
+	color: #002863;
+	font-size: 42px;
+	font-weight: 300 !important;
+	white-space: nowrap;
+}
+
+.valuta-course__text sup {
+	font-size: 32px;
+}
+
+.valuta-course__text::before {
+	background: url(../img/valuta/i-radio.png) 0 0 no-repeat;
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: -4px;
+	margin-right: 10px;
+}
+
+.valuta-course__radio {
+	display: none;
+}
+
+.valuta-course__radio:checked + .valuta-course__text {
+	font-weight: normal !important;
+}
+
+.valuta-course__radio:checked + .valuta-course__text::before {
+	background-position: -20px 0;
+}
+
+@media (min-width: 768px) {
+	.block-btn-valuta--course .btn {
+		width: 240px;
+	}
+}
+
+@media (min-width: 992px) {
+	.valuta-course-wrapper {
+		text-align: left;
+	}
+
+	.valuta-course {
+		margin-top: 20px;
+		margin-bottom: 60px;
+		text-align: left;
+	}
+}
+
+@media (min-width: 1200px) {
+	.valuta-course__text {
+		font-size: 54px;
+	}
+
+	.valuta-course__text sup {
+		font-size: 36px;
+	}
+
+	.valuta-course__text::before {
+		top: -8px;
+	}
+}
+
+
+/**
+ * ввод суммы
+ */
+
+.valuta-input {
+	max-width: 280px;
+	margin: 0 auto;
+}
+
+.valuta-input__left,
+.valuta-input__right {
+	float: left;
+}
+
+.valuta-input__left {
+	width: 44%;
+}
+
+.valuta-input__right {
+	width: 56%;
+}
+
+.valuta-input__label {
+	color: #393939;
+	font-size: 12px;
+	margin-top: 6px;
+}
+
+.valuta-input__form-control {
+	border-radius: 0;
+	border-color: #c4c4c4;
+	color: #002863;
+	font-size: 20px;
+	line-height: 1;
+	padding: 10px 15px;
+	height: 42px;
+}
+
+.valuta-input__slider-wrapper {
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+
+.valuta-input__slider.noUi-target {
+	background: #f1b900;
+	border: none;
+	box-shadow: none;
+	height: 4px;
+	position: relative;
+}
+
+.valuta-input__slider .noUi-handle {
+	background: url(../img/valuta/i-slider-handle.png);
+	border: none;
+	box-shadow: none;
+	top: -10px;
+	left: -12px;
+	height: 25px;
+	width: 25px;
+}
+
+.valuta-input__slider .noUi-handle::before,
+.valuta-input__slider .noUi-handle::after {
+	display: none;
+}
+
+.valuta-input__slider .noUi-origin {
+	background: #667ea1;
+}
+
+.valuta-input__slider .noUi-pips {
+	z-index: -1;
+}
+
+.valuta-input__slider .noUi-marker {
+	display: none;
+}
+
+.valuta-input__slider .noUi-value {
+	padding-top: 5px;
+}
+
+
+/**
+ * Стать клиентом БКС прямо сейчас
+ */
+
+.screen-bc {
+	padding: 20px 0 60px 0;
+}
+
+.bc-container {
+	background: #f1f3f6;
+	border: 2px solid #e4e8ee;
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+@media (min-width: 768px) {
+	.bc-container {
+		padding: 30px;
+	}
+}
+
+@media (min-width: 992px) {
+	.bc-container {
+		padding: 30px 100px;
+	}
+}

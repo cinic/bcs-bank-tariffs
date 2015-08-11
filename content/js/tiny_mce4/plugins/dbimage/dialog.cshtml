@@ -1,0 +1,99 @@
+@using System.Configuration;
+@{
+	int id = 0;
+	string msg = string.Empty;
+	if(IsPost && Request.Files != null && Request.Files.Count > 0)
+	{
+		string StorageTable = Request.Form["StorageTable"];
+		var file = Request.Files[0];
+		if (!string.IsNullOrWhiteSpace(StorageTable) && file != null && file.ContentLength > 0)
+		{
+			string extension = file.FileName.Substring(file.FileName.LastIndexOf(".") + 1).ToLower();
+			if(!new[] {"jpg","png","jpeg"}.Contains(extension))
+			{
+				msg = "Недопустимый формат файла!<br />Разрешены только jpg и png";
+			}
+			else
+			{
+				byte[] content = new byte[file.ContentLength];
+				file.InputStream.Read(content, 0, file.ContentLength);
+				var img = new WebImage(content);
+
+				var stor = new BCSM.Data.FileStorage.DB.Photo.Storage(
+					ConfigurationManager.ConnectionStrings["website"].ConnectionString,
+					StorageTable);
+				id = stor.Add(new BCSM.Data.FileStorage.DB.Photo.StorageItem<int>
+				{
+					Name = file.FileName,
+					Extension = extension,
+					Size = content.LongLength,
+					Hash = BCSM.Security.Hash.SHA1(content),
+					Content = content,
+					MIMEType = BCSM.Converters.FileExtensionConverter.ToMIMEType(extension),
+					IsVerified = true,
+					Width = img.Width,
+					Height = img.Height
+				});
+			}
+		}
+	}
+	string root = System.Web.Mvc.UrlHelper.GenerateContentUrl("~/", Request.RequestContext.HttpContext);
+}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="Stylesheet" href="style.css" />
+		<script>
+			var root = "@root";
+		</script>
+		<script>
+			function set_image(id) {
+				var args = top.tinymce.activeEditor.windowManager.getParams(),
+					src = root + args.image_url + id,
+					img_id = "post_image_" + id,
+					img = document.getElementById(img_id),
+					link_id = "link_image_" + id,
+					link = document.getElementById(link_id);
+				if (id > 0) {
+					img.src = src;
+					link.href = src;
+				} else {
+					document.getElementById("StorageTable").value = args.image_table;
+				}
+			}
+		</script>
+	</head>
+<body onload="set_image(@id)">
+@if (!IsPost || !string.IsNullOrWhiteSpace(msg))
+{
+	<h3>Добавление изображения</h3>
+	if (!string.IsNullOrWhiteSpace(msg))
+	{
+		<p class="error">@Html.Raw(msg)</p>
+	}
+	<form action="" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="StorageTable" id="StorageTable" />
+		<p id="group_file" class="control-group">
+			<label for="file">Выберите изображение</label>
+			<input type="file" id="file" name="file" tabindex="0" />
+		</p>
+		<p class="btn-submit"><input type="submit" value="Загрузить" /></p>
+	</form>
+}
+else
+{
+	string
+		image_id = "post_image_" + id,
+		link_id = "link_image_" + id;
+	<h3>Предпросмотр изображения</h3>
+	<div id="content">
+		<div class="responsive-image">
+			<a href="" target="_blank" id="@link_id">
+				<img src="" alt="" id="@image_id" class="img-responsive" />
+			</a>
+		</div>
+	</div>
+}
+</body>
+</html>

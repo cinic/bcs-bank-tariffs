@@ -1,0 +1,171 @@
+.img-center {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.bcs_bank .container > h2 {
+	text-transform: none !important;
+}
+
+.bcs_bank .container h3 {
+	text-align: center;
+}
+
+.pdf_opis_debet_tarif {
+	margin-top: 30px;
+}
+
+.pdf_opis_debet_tarif h2 {
+	text-align: center;
+	color: #002863;
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+
+.tarif-table {
+	width: 100%;
+	margin-bottom: 50px;
+	font-size: 17px;
+	font-weight: 600;
+	letter-spacing: 1.1px;
+}
+
+.tarif-table td {
+	padding: 20px 10px;
+	width: 50%;
+	vertical-align: top;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.tarif-table td + td {
+	color: #828fa2;
+	width: 40%;
+}
+
+.tarif-table td + td + td {
+	color: #404040;
+	width: 25%;
+}
+
+.tarif-table.equal td {
+	width: 25%;
+}
+
+.tarif-table .title {
+	color: #767676;
+}
+
+.tarif-table .sub {
+	color: #828fa2;
+}
+
+.c1 {
+	color: #404040 !important;
+}
+
+.c2 {
+	color: #828fa2 !important;
+}
+
+.tarif-table td.last {
+	border-bottom: none;
+}
+
+.tarif-table td.center {
+	text-align: center;
+}
+
+.tarifs-descr {
+	border-top: 1px solid #e5e5e5;
+	padding-top: 20px;
+	text-align: left;
+	margin-bottom: 70px;
+}
+
+.tarifs-descr a {
+	color: #002863;
+	display: block;
+	width: 100%;
+	padding: 17px 0;
+	padding-left: 80px;
+	background-position: 0 0;
+	margin-bottom: 20px;
+}
+
+.tarifs-descr .file-icon-pdf.two-line {
+	padding: 7px 0;
+	padding-left: 80px;
+}
+
+.file-icon-pdf {
+	background: url(../img/icons/files-pdf.png) no-repeat;
+}
+
+.note {
+	font-size: 10px;
+	color: #7b7b7b;
+}
+
+.tarifs_credit_cards h1 {
+	text-align: center;
+	color: #002863;
+	font-weight: 600;
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+
+.tarif_credit_desc_table table {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.tarif_credit_desc_table table tr td {
+	border-bottom: 1px solid #e5e5e5;
+	color: #404040;
+	font-size: 17px;
+	letter-spacing: 1.1px;
+	font-weight: normal;
+	height: 82px;
+	line-height: 19px;
+	padding-left: 25px;
+}
+
+.tarif_credit_desc_table table tr td.no_border {
+	border-bottom: none;
+}
+
+.tarif_credit_desc_table table tr td span {
+	color: #808fa2;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.tarif_credit_desc_table table tr td.title_tarif {
+	color: #767676; 
+	font-weight: 600;
+	width: 40%;
+}
+		
+@media (min-width: 768px) {
+
+	.tarif_credit_desc_table {
+		display: block;
+		margin-top: 70px;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	.pdf_opis_debet_tarif .container {
+		padding: 0 170px !important;
+	}
+
+}
+
+.note-block p {
+	text-align: left;
+	font-size: 10px;
+	margin-bottom: 10px;
+	color: #7b7b7b;
+}
