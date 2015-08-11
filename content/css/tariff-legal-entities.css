@@ -62,3 +62,8 @@
   margin-bottom: 10px;
   color: #7b7b7b;
 }
+
+sup {
+  left: 0.2em;
+  font-size: 100%;
+}
